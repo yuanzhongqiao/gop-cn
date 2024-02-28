@@ -1,271 +1,329 @@
-<div align="center">
-<p></p>
-<p>
-    <img width="80" src="https://goplus.org/favicon.svg">
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div align="center" dir="auto">
+<p dir="auto"></p>
+<p dir="auto">
+    <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/eed57b1ac8180cef846c7f07ffa4b04308468547f3e6195236c2a1d059886ff3/68747470733a2f2f676f706c75732e6f72672f66617669636f6e2e737667"><img width="80" src="https://camo.githubusercontent.com/eed57b1ac8180cef846c7f07ffa4b04308468547f3e6195236c2a1d059886ff3/68747470733a2f2f676f706c75732e6f72672f66617669636f6e2e737667" data-canonical-src="https://goplus.org/favicon.svg" style="max-width: 100%;"></a>
 </p>
-<h1>The Go+ Programming Language</h1>
-
-[goplus.org](https://goplus.org) | [Docs](doc/docs.md) | [Go+ vs. Go](doc/goplus-vs-go.md) | [Tutorials](https://tutorial.goplus.org/) | [Playground](https://play.goplus.org) | [iGo+ Playground](https://repl.goplus.org/) | [Contributing & compiler design](doc/contributing.md)
-
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go+ 编程语言</font></font></h1><a id="user-content-the-go-programming-language" class="anchor-element" aria-label="永久链接：Go+ 编程语言" href="#the-go-programming-language"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://goplus.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">goplus.org</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> | </font></font><a href="/goplus/gop/blob/main/doc/docs.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font><a href="/goplus/gop/blob/main/doc/goplus-vs-go.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go+ 与 Go</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> | </font></font><a href="https://tutorial.goplus.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">教程</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font><a href="https://play.goplus.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">游乐场</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font><a href="https://repl.goplus.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">iGo+游乐场</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font><a href="/goplus/gop/blob/main/doc/contributing.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献和编译器设计</font></font></a></p>
 </div>
+<div align="center" dir="auto">
 
-<div align="center">
-<!--
-[![VSCode](https://img.shields.io/badge/vscode-Go+-teal.svg)](https://github.com/gopcode/vscode-goplus)
-[![Discord](https://img.shields.io/discord/983646982100897802?label=Discord&logo=discord&logoColor=white)](https://discord.gg/mYjWCJDcAr)
-[![Interpreter](https://img.shields.io/badge/interpreter-iGo+-seagreen.svg)](https://github.com/goplus/igop)
--->
-
-[![Build Status](https://github.com/goplus/gop/actions/workflows/go.yml/badge.svg)](https://github.com/goplus/gop/actions/workflows/go.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/goplus/gop)](https://goreportcard.com/report/github.com/goplus/gop)
-[![Coverage Status](https://codecov.io/gh/goplus/gop/branch/main/graph/badge.svg)](https://codecov.io/gh/goplus/gop)
-[![GitHub release](https://img.shields.io/github/v/tag/goplus/gop.svg?label=release)](https://github.com/goplus/gop/releases)
-[![Discord](https://img.shields.io/badge/Discord-online-success.svg?logo=discord&logoColor=white)](https://discord.com/invite/mYjWCJDcAr)
-
+<p dir="auto"><a href="https://github.com/goplus/gop/actions/workflows/go.yml"><img src="https://github.com/goplus/gop/actions/workflows/go.yml/badge.svg" alt="构建状态" style="max-width: 100%;"></a>
+<a href="https://goreportcard.com/report/github.com/goplus/gop" rel="nofollow"><img src="https://camo.githubusercontent.com/2bb486def96b47f4a1ce784d6dfce758e9cff7196cfaa74620347a006b69e11b/68747470733a2f2f676f7265706f7274636172642e636f6d2f62616467652f6769746875622e636f6d2f676f706c75732f676f70" alt="去报告卡" data-canonical-src="https://goreportcard.com/badge/github.com/goplus/gop" style="max-width: 100%;"></a>
+<a href="https://codecov.io/gh/goplus/gop" rel="nofollow"><img src="https://camo.githubusercontent.com/521bc63ed0a8ce776d12c943b3595ec763fa19bb455ac8fff31ba241bc73cec9/68747470733a2f2f636f6465636f762e696f2f67682f676f706c75732f676f702f6272616e63682f6d61696e2f67726170682f62616467652e737667" alt="覆盖状态" data-canonical-src="https://codecov.io/gh/goplus/gop/branch/main/graph/badge.svg" style="max-width: 100%;"></a>
+<a href="https://github.com/goplus/gop/releases"><img src="https://camo.githubusercontent.com/8166042d0101b2fdefc0696c5509df96bf3cc2621ce4c5f50de6bd8c2ffc41ea/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f762f7461672f676f706c75732f676f702e7376673f6c6162656c3d72656c65617365" alt="GitHub 发布" data-canonical-src="https://img.shields.io/github/v/tag/goplus/gop.svg?label=release" style="max-width: 100%;"></a>
+<a href="https://discord.com/invite/mYjWCJDcAr" rel="nofollow"><img src="https://camo.githubusercontent.com/45018ad8f9c94c8d422eecdfbbfc85e2fdcebac57718b45408a5b9a6cdfef066/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446973636f72642d6f6e6c696e652d737563636573732e7376673f6c6f676f3d646973636f7264266c6f676f436f6c6f723d7768697465" alt="不和谐" data-canonical-src="https://img.shields.io/badge/Discord-online-success.svg?logo=discord&amp;logoColor=white" style="max-width: 100%;"></a></p>
 </div>
-
-Our vision is to **enable everyone to create production-level applications**.
-
-#### Easy to learn
-
-* Simple and easy to understand
-* Smaller syntax set than Python in best practices
-
-#### Ready for large projects
-
-* Derived from Go and easy to build large projects from its good engineering foundation
-
-The Go+ programming language is designed for engineering, STEM education, and data science.
-
-* **For engineering**: working in the simplest language that can be mastered by children.
-* **For STEM education**: studying an engineering language that can be used for work in the future.
-* **For data science**: communicating with engineers in the same language.
-
-For more details, see [Quick Start](doc/docs.md).
-
-
-## Command Style Code
-
-Different from the function call style of most languages, Go+ recommends command style code:
-
-```coffee
-println "Hello world"
-```
-
-To emphasize our preference for command style, we introduce `echo` as an alias for `println`:
-
-```coffee
-echo "Hello world"
-```
-
-For more discussion on coding style, see https://tutorial.goplus.org/hello-world.
-
-
-## Go+ Classfiles
-
-```
-One language can change the whole world.
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的愿景是</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">让每个人都能创建生产级应用程序</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简单易学</font></font></h4><a id="user-content-easy-to-learn" class="anchor-element" aria-label="永久链接：简单易学" href="#easy-to-learn"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简单易懂</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最佳实践中的语法集比 Python 更小</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为大型项目做好准备</font></font></h4><a id="user-content-ready-for-large-projects" class="anchor-element" aria-label="永久链接：为大型项目做好准备" href="#ready-for-large-projects"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">源自Go，良好的工程基础易于构建大型项目</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go+ 编程语言专为工程、STEM 教育和数据科学而设计。</font></font></p>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于工程</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：使用儿童可以掌握的最简单的语言进行工作。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于STEM教育</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：学习一种可以在未来工作中使用的工程语言。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于数据科学</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：用同一种语言与工程师交流。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多详细信息，请参见</font></font><a href="/goplus/gop/blob/main/doc/docs.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速入门</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">命令样式代码</font></font></h2><a id="user-content-command-style-code" class="anchor-element" aria-label="永久链接：命令样式代码" href="#command-style-code"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与大多数语言的函数调用风格不同，Go+推荐命令风格的代码：</font></font></p>
+<div class="highlight highlight-source-coffee notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-en">println</span> <span class="pl-s"><span class="pl-pds">"</span>Hello world<span class="pl-pds">"</span></span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="println &quot;Hello world&quot;" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为了强调我们对命令风格的偏好，我们引入</font></font><code>echo</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以下命令作为别名</font></font><code>println</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<div class="highlight highlight-source-coffee notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-en">echo</span> <span class="pl-s"><span class="pl-pds">"</span>Hello world<span class="pl-pds">"</span></span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="echo &quot;Hello world&quot;" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关编码风格的更多讨论，请参阅</font></font><a href="https://tutorial.goplus.org/hello-world" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://tutorial.goplus.org/hello-world</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go+ 类文件</font></font></h2><a id="user-content-go-classfiles" class="anchor-element" aria-label="永久链接：Go+ 类文件" href="#go-classfiles"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>One language can change the whole world.
 Go+ is a "DSL" for all domains.
-```
-
-Rob Pike once said that if he could only introduce one feature to Go, he would choose `interface` instead of `goroutine`. `classfile` is as important to Go+ as `interface` is to Go.
-
-In the design philosophy of Go+, we do not recommend `DSL` (Domain Specific Language). But `SDF` (Specific Domain Friendliness) is very important. The Go+ philosophy about `SDF` is:
-
-```
-Don't define a language for specific domain.
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="One language can change the whole world.
+Go+ is a &quot;DSL&quot; for all domains." tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rob Pike 曾经说过，如果他只能向 Go 引入一项功能，他会选择</font></font><code>interface</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">而不是</font></font><code>goroutine</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">对于 Go+来说和 Go 一样</font></font><code>classfile</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">重要。</font></font><code>interface</code><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在Go+的设计理念中，我们不推荐</font></font><code>DSL</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（Domain Specific Language）。</font><font style="vertical-align: inherit;">但是</font></font><code>SDF</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（特定领域友好性）非常重要。</font><font style="vertical-align: inherit;">Go+ 的哲学是</font></font><code>SDF</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>Don't define a language for specific domain.
 Abstract domain knowledge for it.
-```
-
-Go+ introduces `classfile` to abstract domain knowledge.
-
-Sound a bit abstract? Let's see some Go+ classfiles.
-
-* STEM Education: [spx: A Go+ 2D Game Engine](https://github.com/goplus/spx)
-* Web Programming: [yap: Yet Another HTTP Web Framework](https://github.com/goplus/yap)
-* Web Programming: [yaptest: HTTP Test Framework](https://github.com/goplus/yap#yaptest-http-test-framework)
-* Web Programming: [ydb: Database Framework](https://github.com/goplus/yap#ydb-database-framework)
-* DevOps: [gsh: Go+ DevOps Tools](https://github.com/qiniu/x/tree/main/gsh)
-* Unit Test: [classfile: Unit Test](https://github.com/goplus/gop/blob/main/doc/classfile.md#classfile-unit-test)
-* Mechanism: [What's Classfile](doc/classfile.md#whats-classfile)
-* Mechanism: [Go+ Classfiles](doc/classfile.md)
-
-
-### spx: A Go+ 2D Game Engine
-
-![Screen Shot1](https://github.com/goplus/spx/blob/main/tutorial/01-Weather/1.jpg) ![Screen Shot2](https://github.com/goplus/spx/blob/main/tutorial/01-Weather/2.jpg)
-
-Through this example you can learn how to implement dialogues between multiple actors.
-
-Here are some codes in [Kai.spx](https://github.com/goplus/spx/blob/main/tutorial/01-Weather/Kai.spx):
-
-```coffee
-onStart => {
-	say "Where do you come from?", 2
-	broadcast "1"
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="Don't define a language for specific domain.
+Abstract domain knowledge for it." tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go+ 引入</font></font><code>classfile</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了抽象领域知识。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">听起来有点抽象？</font><font style="vertical-align: inherit;">让我们看看一些 Go+ 类文件。</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">STEM 教育：</font></font><a href="https://github.com/goplus/spx"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">spx：Go+ 2D 游戏引擎</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Web 编程：</font></font><a href="https://github.com/goplus/yap"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">yap：另一个 HTTP Web 框架</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Web 编程：</font></font><a href="https://github.com/goplus/yap#yaptest-http-test-framework"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">yaptest：HTTP 测试框架</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Web 编程：</font></font><a href="https://github.com/goplus/yap#ydb-database-framework"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ydb：数据库框架</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DevOps：</font></font><a href="https://github.com/qiniu/x/tree/main/gsh"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">gsh：Go+ DevOps 工具</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单元测试：</font></font><a href="https://github.com/goplus/gop/blob/main/doc/classfile.md#classfile-unit-test"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">类文件：单元测试</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">机制：</font></font><a href="/goplus/gop/blob/main/doc/classfile.md#whats-classfile"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">什么是类文件</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">机制：</font></font><a href="/goplus/gop/blob/main/doc/classfile.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go+ 类文件</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">spx：Go+ 2D 游戏引擎</font></font></h3><a id="user-content-spx-a-go-2d-game-engine" class="anchor-element" aria-label="永久链接： spx：Go+ 2D 游戏引擎" href="#spx-a-go-2d-game-engine"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/goplus/spx/blob/main/tutorial/01-Weather/1.jpg"><img src="https://github.com/goplus/spx/raw/main/tutorial/01-Weather/1.jpg" alt="屏幕截图1" style="max-width: 100%;"></a> <a target="_blank" rel="noopener noreferrer" href="https://github.com/goplus/spx/blob/main/tutorial/01-Weather/2.jpg"><img src="https://github.com/goplus/spx/raw/main/tutorial/01-Weather/2.jpg" alt="屏幕截图2" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过这个例子你可以学习如何实现多个演员之间的对话。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以下是</font></font><a href="https://github.com/goplus/spx/blob/main/tutorial/01-Weather/Kai.spx"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kai.spx</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中的一些代码：</font></font></p>
+<div class="highlight highlight-source-coffee notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-en">onStart</span> <span class="pl-k">=&gt;</span> {
+	<span class="pl-en">say</span> <span class="pl-s"><span class="pl-pds">"</span>Where do you come from?<span class="pl-pds">"</span></span>, <span class="pl-c1">2</span>
+	<span class="pl-en">broadcast</span> <span class="pl-s"><span class="pl-pds">"</span>1<span class="pl-pds">"</span></span>
 }
 
-onMsg "2", => {
-	say "What's the climate like in your country?", 3
-	broadcast "3"
+<span class="pl-en">onMsg</span> <span class="pl-s"><span class="pl-pds">"</span>2<span class="pl-pds">"</span></span>, <span class="pl-k">=&gt;</span> {
+	<span class="pl-en">say</span> <span class="pl-s"><span class="pl-pds">"</span>What's the climate like in your country?<span class="pl-pds">"</span></span>, <span class="pl-c1">3</span>
+	<span class="pl-en">broadcast</span> <span class="pl-s"><span class="pl-pds">"</span>3<span class="pl-pds">"</span></span>
+}</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="onStart => {
+	say &quot;Where do you come from?&quot;, 2
+	broadcast &quot;1&quot;
 }
-```
 
-We call `onStart` and `onMsg` to listen events. `onStart` is called when the program is started. And `onMsg` is called when someone calls `broadcast` to broadcast a message.
+onMsg &quot;2&quot;, => {
+	say &quot;What's the climate like in your country?&quot;, 3
+	broadcast &quot;3&quot;
+}" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们打电话</font></font><code>onStart</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并</font></font><code>onMsg</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">聆听事件。</font></font><code>onStart</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">程序启动时被调用。</font></font><code>onMsg</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当有人呼叫</font></font><code>broadcast</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">广播消息时</font><font style="vertical-align: inherit;">被呼叫。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">节目开始后，凯说道</font></font><code>Where do you come from?</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，然后广播了这条消息</font></font><code>1</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">谁会收到此消息？</font><font style="vertical-align: inherit;">让我们看看</font></font><a href="https://github.com/goplus/spx/blob/main/tutorial/01-Weather/Jaime.spx"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jaime.spx</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中的代码：</font></font></p>
+<div class="highlight highlight-source-coffee notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-en">onMsg</span> <span class="pl-s"><span class="pl-pds">"</span>1<span class="pl-pds">"</span></span>, <span class="pl-k">=&gt;</span> {
+	<span class="pl-en">say</span> <span class="pl-s"><span class="pl-pds">"</span>I come from England.<span class="pl-pds">"</span></span>, <span class="pl-c1">2</span>
+	<span class="pl-en">broadcast</span> <span class="pl-s"><span class="pl-pds">"</span>2<span class="pl-pds">"</span></span>
+}</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="onMsg &quot;1&quot;, => {
+	say &quot;I come from England.&quot;, 2
+	broadcast &quot;2&quot;
+}" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是的，詹姆收到消息</font></font><code>1</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">后说道</font></font><code>I come from England.</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">然后他广播了这条消息</font></font><code>2</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">凯接过，说道</font></font><code>What's the climate like in your country?</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以下过程非常相似。</font><font style="vertical-align: inherit;">通过这种方式，您可以实现多个演员之间的对话。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关更多详细信息，请参阅</font></font><a href="https://github.com/goplus/spx"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">spx：Go+ 2D 游戏引擎</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">yap：另一个 HTTP Web 框架</font></font></h3><a id="user-content-yap-yet-another-http-web-framework" class="anchor-element" aria-label="永久链接：yap：另一个 HTTP Web 框架" href="#yap-yet-another-http-web-framework"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提供静态文件和处理动态 GET/POST 请求的能力的演示：</font></font></p>
+<div class="highlight highlight-source-coffee notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-k">static</span> <span class="pl-s"><span class="pl-pds">"</span>/foo<span class="pl-pds">"</span></span>, <span class="pl-en">FS</span>(<span class="pl-s"><span class="pl-pds">"</span>public<span class="pl-pds">"</span></span>)
+<span class="pl-k">static</span> <span class="pl-s"><span class="pl-pds">"</span>/<span class="pl-pds">"</span></span>    <span class="pl-c"><span class="pl-c">#</span> Equivalent to static "/", FS("static")</span>
 
-When the program starts, Kai says `Where do you come from?`, and then broadcasts the message `1`. Who will recieve this message? Let's see codes in [Jaime.spx](https://github.com/goplus/spx/blob/main/tutorial/01-Weather/Jaime.spx):
-
-```coffee
-onMsg "1", => {
-	say "I come from England.", 2
-	broadcast "2"
-}
-```
-
-Yes, Jaime recieves the message `1` and says `I come from England.`. Then he broadcasts the message `2`. Kai recieves it and says `What's the climate like in your country?`.
-
-The following procedures are very similar. In this way you can implement dialogues between multiple actors.
-
-See [spx: A Go+ 2D Game Engine](https://github.com/goplus/spx) for more details.
-
-
-### yap: Yet Another HTTP Web Framework
-
-Demo of serving static files and ability to handle dynamic GET/POST requests:
-
-```coffee
-static "/foo", FS("public")
-static "/"    # Equivalent to static "/", FS("static")
-
-get "/p/:id", ctx => {
-	ctx.json {
-		"id": ctx.param("id"),
+<span class="pl-en">get</span> <span class="pl-s"><span class="pl-pds">"</span>/p/:id<span class="pl-pds">"</span></span>, <span class="pl-en">ctx</span> <span class="pl-k">=&gt;</span> {
+	<span class="pl-smi">ctx</span>.<span class="pl-en">json</span> {
+		<span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-smi">ctx</span>.<span class="pl-en">param</span>(<span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>),
 	}
 }
 
-run ":8080"
-```
+<span class="pl-en">run</span> <span class="pl-s"><span class="pl-pds">"</span>:8080<span class="pl-pds">"</span></span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="static &quot;/foo&quot;, FS(&quot;public&quot;)
+static &quot;/&quot;    # Equivalent to static &quot;/&quot;, FS(&quot;static&quot;)
 
-If you run it and visit http://localhost:8080/p/123, you will get:
+get &quot;/p/:id&quot;, ctx => {
+	ctx.json {
+		&quot;id&quot;: ctx.param(&quot;id&quot;),
+	}
+}
 
-```
-{"id":"123"}
-```
-
-See [yap: Yet Another HTTP Web Framework](https://github.com/goplus/yap) for more details.
-
-
-### gsh: Go+ DevOps Tools
-
-Yes, now you can write `shell script` in Go+. It supports all shell commands.
-
-Let's create a file named `./example.gsh` and write the following code:
-
-```coffee
-mkdir "testgsh"
-```
-
-Don't need a `go.mod` file, just enter `gop run ./example.gsh` directly to run.
-
-See [gsh: Go+ DevOps Tools](https://github.com/qiniu/x/tree/main/gsh) for more details.
-
-
-## Key Features of Go+
-
-* A static typed language.
-* The simplest engineering language that can be mastered by children (script-like style).
-* Performance: as fast as Go (Go+'s main backend compiles to human-readable Go).
-* Fully compatible with [Go](https://github.com/golang/go) and can mix Go/Go+ code in the same package (see [Go/Go+ hybrid programming](doc/docs.md#gogo-hybrid-programming)).
-* No DSL (Domain Specific Language) support, but SDF ([Specific Domain Friendliness](doc/classfile.md)).
-* Support Go code generation (main backend) and [bytecode backend](https://github.com/goplus/igop) (REPL: see [iGo+](https://repl.goplus.org/)).
-* [Simplest way to interaction with C](doc/docs.md#calling-c-from-go) (cgo is supported but not recommended).
-* [Powerful built-in data processing capabilities](doc/docs.md#data-processing).
-
-
-## How to install
-
-### on Windows
-
-```sh
-winget install goplus.gop
-```
-
-### on Debian/Ubuntu
-
-```sh
-sudo bash -c ' echo "deb [trusted=yes] https://pkgs.goplus.org/apt/ /" > /etc/apt/sources.list.d/goplus.list'
+run &quot;:8080&quot;" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果运行它并访问</font></font><a href="http://localhost:8080/p/123" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost:8080/p/123</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，您将得到：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>{"id":"123"}
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="{&quot;id&quot;:&quot;123&quot;}" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关更多详细信息，请参阅</font></font><a href="https://github.com/goplus/yap"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">yap：另一个 HTTP Web 框架</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">gsh：Go+ DevOps 工具</font></font></h3><a id="user-content-gsh-go-devops-tools" class="anchor-element" aria-label="永久链接：gsh：Go+ DevOps 工具" href="#gsh-go-devops-tools"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是的，现在你可以</font></font><code>shell script</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用 Go+ 编写了。</font><font style="vertical-align: inherit;">它支持所有 shell 命令。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">让我们创建一个名为的文件</font></font><code>./example.gsh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并写入以下代码：</font></font></p>
+<div class="highlight highlight-source-coffee notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-en">mkdir</span> <span class="pl-s"><span class="pl-pds">"</span>testgsh<span class="pl-pds">"</span></span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="mkdir &quot;testgsh&quot;" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不需要</font></font><code>go.mod</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件，</font></font><code>gop run ./example.gsh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">直接输入即可运行。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关更多详细信息，请参阅</font></font><a href="https://github.com/qiniu/x/tree/main/gsh"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">gsh：Go+ DevOps 工具</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go+ 的主要特点</font></font></h2><a id="user-content-key-features-of-go" class="anchor-element" aria-label="永久链接：Go+ 的主要特性" href="#key-features-of-go"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">静态类型语言。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最简单的儿童也能掌握的工程语言（脚本风格）。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">性能：与 Go 一样快（Go+ 的主要后端编译为人类可读的 Go）。</font></font></li>
+<li><font style="vertical-align: inherit;"></font><a href="https://github.com/golang/go"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与Go</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">完全兼容</font><font style="vertical-align: inherit;">，可以在同一个包中混合Go/Go+代码（参见</font></font><a href="/goplus/gop/blob/main/doc/docs.md#gogo-hybrid-programming"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go/Go+混合编程</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不支持 DSL（领域特定语言），但支持 SDF（</font></font><a href="/goplus/gop/blob/main/doc/classfile.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特定领域友好</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持Go代码生成（主后端）和</font></font><a href="https://github.com/goplus/igop"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字节码后端</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（REPL：参见</font></font><a href="https://repl.goplus.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">iGo+</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）。</font></font></li>
+<li><a href="/goplus/gop/blob/main/doc/docs.md#calling-c-from-go"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与 C 交互的最简单方法</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（支持 cgo，但不推荐）。</font></font></li>
+<li><a href="/goplus/gop/blob/main/doc/docs.md#data-processing"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">强大的内置数据处理能力</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何安装</font></font></h2><a id="user-content-how-to-install" class="anchor-element" aria-label="永久链接：如何安装" href="#how-to-install"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Windows 上</font></font></h3><a id="user-content-on-windows" class="anchor-element" aria-label="固定链接：在 Windows 上" href="#on-windows"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>winget install goplus.gop</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="winget install goplus.gop" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Debian/Ubuntu 上</font></font></h3><a id="user-content-on-debianubuntu" class="anchor-element" aria-label="永久链接：在 Debian/Ubuntu 上" href="#on-debianubuntu"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>sudo bash -c <span class="pl-s"><span class="pl-pds">'</span> echo "deb [trusted=yes] https://pkgs.goplus.org/apt/ /" &gt; /etc/apt/sources.list.d/goplus.list<span class="pl-pds">'</span></span>
 sudo apt update
-sudo apt install gop
-```
+sudo apt install gop</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="sudo bash -c ' echo &quot;deb [trusted=yes] https://pkgs.goplus.org/apt/ /&quot; > /etc/apt/sources.list.d/goplus.list'
+sudo apt update
+sudo apt install gop" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 RedHat/CentOS/Fedora 上</font></font></h3><a id="user-content-on-redhatcentosfedora" class="anchor-element" aria-label="永久链接：在 RedHat/CentOS/Fedora 上" href="#on-redhatcentosfedora"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>sudo bash -c <span class="pl-s"><span class="pl-pds">'</span>echo -e "[goplus]\nname=Go+ Repo\nbaseurl=https://pkgs.goplus.org/yum/\nenabled=1\ngpgcheck=0" &gt; /etc/yum.repos.d/goplus.repo<span class="pl-pds">'</span></span>
+sudo yum install gop</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="sudo bash -c 'echo -e &quot;[goplus]\nname=Go+ Repo\nbaseurl=https://pkgs.goplus.org/yum/\nenabled=1\ngpgcheck=0&quot; > /etc/yum.repos.d/goplus.repo'
+sudo yum install gop" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 macOS/Linux（自制）上</font></font></h3><a id="user-content-on-macoslinux-homebrew" class="anchor-element" aria-label="永久链接：在 macOS/Linux（自制）上" href="#on-macoslinux-homebrew"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><a href="https://brew.sh/" rel="nofollow"><font style="vertical-align: inherit;">通过brew</font></a><font style="vertical-align: inherit;">安装</font></font><a href="https://brew.sh/" rel="nofollow"><font style="vertical-align: inherit;"></font></a></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>$ brew install goplus</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="$ brew install goplus" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从源代码</font></font></h3><a id="user-content-from-source-code" class="anchor-element" aria-label="固定链接：来自源代码" href="#from-source-code"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：需要go1.18或更高版本</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>git clone https://github.com/goplus/gop.git
+<span class="pl-c1">cd</span> gop
 
-### on RedHat/CentOS/Fedora
-
-```sh
-sudo bash -c 'echo -e "[goplus]\nname=Go+ Repo\nbaseurl=https://pkgs.goplus.org/yum/\nenabled=1\ngpgcheck=0" > /etc/yum.repos.d/goplus.repo'
-sudo yum install gop
-```
-
-### on macOS/Linux (Homebrew)
-
-Install via [brew](https://brew.sh/)
-
-```sh
-$ brew install goplus
-```
-
-### from source code
-
-Note: Requires go1.18 or later
-
-```bash
-git clone https://github.com/goplus/gop.git
+<span class="pl-c"><span class="pl-c">#</span> On mac/linux run:</span>
+./all.bash
+<span class="pl-c"><span class="pl-c">#</span> On Windows run:</span>
+all.bat</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone https://github.com/goplus/gop.git
 cd gop
 
 # On mac/linux run:
 ./all.bash
 # On Windows run:
-all.bat
-```
-
-## Go+ Applications
-
-### 2D Games powered by Go+
-
-* [A Go+ 2D Game Engine for STEM education](https://github.com/goplus/spx)
-* [Aircraft War](https://github.com/goplus/AircraftWar)
-* [Flappy Bird](https://github.com/goplus/FlappyCalf)
-* [Maze Play](https://github.com/goplus/MazePlay)
-* [BetaGo](https://github.com/xushiwei/BetaGo)
-* [Gobang](https://github.com/xushiwei/Gobang)
-* [Dinosaur](https://github.com/xushiwei/Dinosaur)
-
-### Web Programming
-
-* [yap: Yet Another HTTP Web Framework](https://github.com/goplus/yap)
-* [yaptest: HTTP Test Framework](https://github.com/goplus/yap/tree/main/ytest)
-* [ydb: Database Framework](https://github.com/goplus/yap#ydb-database-framework)
-
-### DevOps Tools
-
-* [gsh: Go+ DevOps Tools](https://github.com/qiniu/x/tree/main/gsh)
-
-### Data Processing
-
-* [hdq: HTML DOM Query Language for Go+](https://github.com/goplus/hdq)
-
-
-## IDE Plugins
-
-* vscode: [Go/Go+ for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=goplus.gop)
-
-
-## Contributing
-
-The Go+ project welcomes all contributors. We appreciate your help!
-
-For more details, see [Contributing & compiler design](doc/contributing.md).
-
-
-## Give a Star! ⭐
-
-If you like or are using Go+ to learn or start your projects, please give it a star. Thanks!
+all.bat" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go+应用程序</font></font></h2><a id="user-content-go-applications" class="anchor-element" aria-label="永久链接：Go+ 应用程序" href="#go-applications"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由 Go+ 提供支持的 2D 游戏</font></font></h3><a id="user-content-2d-games-powered-by-go" class="anchor-element" aria-label="永久链接：由 Go+ 提供支持的 2D 游戏" href="#2d-games-powered-by-go"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://github.com/goplus/spx"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于 STEM 教育的 Go+ 2D 游戏引擎</font></font></a></li>
+<li><a href="https://github.com/goplus/AircraftWar"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">飞机大战</font></font></a></li>
+<li><a href="https://github.com/goplus/FlappyCalf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">飞扬的鸟</font></font></a></li>
+<li><a href="https://github.com/goplus/MazePlay"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">迷宫游戏</font></font></a></li>
+<li><a href="https://github.com/xushiwei/BetaGo"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贝塔戈</font></font></a></li>
+<li><a href="https://github.com/xushiwei/Gobang"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">五子棋</font></font></a></li>
+<li><a href="https://github.com/xushiwei/Dinosaur"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">恐龙</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网页编程</font></font></h3><a id="user-content-web-programming" class="anchor-element" aria-label="永久链接：网络编程" href="#web-programming"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://github.com/goplus/yap"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">yap：另一个 HTTP Web 框架</font></font></a></li>
+<li><a href="https://github.com/goplus/yap/tree/main/ytest"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">yaptest：HTTP 测试框架</font></font></a></li>
+<li><a href="https://github.com/goplus/yap#ydb-database-framework"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ydb：数据库框架</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发运营工具</font></font></h3><a id="user-content-devops-tools" class="anchor-element" aria-label="永久链接：DevOps 工具" href="#devops-tools"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://github.com/qiniu/x/tree/main/gsh"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">gsh：Go+ DevOps 工具</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据处理</font></font></h3><a id="user-content-data-processing" class="anchor-element" aria-label="永久链接：数据处理" href="#data-processing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://github.com/goplus/hdq"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">hdq：Go+ 的 HTML DOM 查询语言</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IDE插件</font></font></h2><a id="user-content-ide-plugins" class="anchor-element" aria-label="永久链接：IDE 插件" href="#ide-plugins"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">vscode：</font></font><a href="https://marketplace.visualstudio.com/items?itemName=goplus.gop" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于 Visual Studio Code 的 Go/Go+</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></h2><a id="user-content-contributing" class="anchor-element" aria-label="永久链接：贡献" href="#contributing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go+ 项目欢迎所有贡献者。</font><font style="vertical-align: inherit;">我们感谢您的帮助！</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关更多详细信息，请参阅</font></font><a href="/goplus/gop/blob/main/doc/contributing.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献和编译器设计</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">给一颗星！</font><font style="vertical-align: inherit;">⭐</font></font></h2><a id="user-content-give-a-star-" class="anchor-element" aria-label="永久链接：给个星星吧！ ⭐" href="#give-a-star-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您喜欢或正在使用 Go+ 来学习或启动您的项目，请给它一颗星。</font><font style="vertical-align: inherit;">谢谢！</font></font></p>
+</article></div>
